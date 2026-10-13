@@ -5,8 +5,12 @@
 import csv # Used to read the csv file containing the exchange rates
 
 class ExchangeRates: # Create class for exchange rates
-    def __init__(self, filename):
-        self.__rate = 1.3978
+
+    def __init__(self, filename): # Create constructor to read the exchange rates from a CSV file
+        with open(filename) as fx_file:
+            reader = csv.DictReader(fx_file)
+            for row in reader:
+                self.__rate = float(row['FXAUSDCAD']) # Overwritten each row, but the last row will be the most recent exchange rate
 
     def get_rate(self): # Create method to get the exchange rate
         return self.__rate
@@ -28,14 +32,3 @@ if __name__ == "__main__": # Create main function to test the class
 
     # print("The exchange rate is {:.4f}".format(rate))
     print("The converted amount is {:.2f}".format(converted_amount))
-
-
-
-
-''' # Open the CSV file and read the exchange rates
-with open('BankofCanadaExchangeRate.2026.csv') as fx_file:
-    reader = csv.DictReader(fx_file)
-    for row in reader:
-        print(row['FXAUSDCAD'])
-
-'''
