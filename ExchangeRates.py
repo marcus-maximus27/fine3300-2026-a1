@@ -2,7 +2,7 @@
 ExchangeRates
 
 Author: Marcus Maximus Reyes
-Course: fine3300_python-for-finance-professionals
+Course: FINE 3300 (Fall 2026)
 Assignment 1
 
 This is a Python script for an exchange rate calculator based on the latest annual exchange rates
