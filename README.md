@@ -3,7 +3,6 @@
 Assignment #1 for FINE 3300 (Python for Finance Professionals), Fall 2026, Schulich School of Business.
 
 **Author:** Marcus Maximus Reyes
-**Repository:** https://github.com/marcus-maximus27/fine3300-2026-a1
 
 ## Overview
 
